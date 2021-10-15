@@ -1,3 +1,5 @@
 export default {
-  coords: {},
+  books: [],
+  book: {},
+  isLoading: false,
 };

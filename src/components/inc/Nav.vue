@@ -1,19 +1,22 @@
 <template>
   <ul class="navi-wrap">
     <li>
-      <router-link to="/book">
-        도서리스트<small>(Pagination)</small>
+      <router-link to="/">
+        도서리스트
+        <small>(Pagination)</small>
       </router-link>
     </li>
     <li>
-      <router-link to="/book2">
-        도서리스트<small>(Infinite Scroll)</small>
+      <router-link to="/infinite">
+        도서리스트
+        <small>(Infinite Scroll)</small>
       </router-link>
     </li>
     <li>
-      <router-link to="//127.0.0.1:3000">
-        도서관리<small>(Express)</small>
-      </router-link>
+      <a href="//127.0.0.1:3000">
+        도서관리
+        <small>(Express)</small>
+      </a>
     </li>
   </ul>
 </template>
@@ -30,9 +33,10 @@ ul.navi-wrap {
   li {
     font-size: 0.75em;
     cursor: pointer;
+    @include flex;
     a {
-      display: block;
-      padding: 0.875em 1.25em;
+      @include flex($v: center);
+      padding: 0 1.25em;
     }
     &:hover {
       background-color: $secondary-color;

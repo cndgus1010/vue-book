@@ -14,11 +14,15 @@ const routes = [
   },
   {
     path: "/infinite",
+    redirect: "/infinite/1",
+  },
+  {
+    path: "/infinite/:page",
     name: "ListInfinite",
     component: ListInfinite,
   },
   {
-    path: "/view",
+    path: "/view/:idx",
     name: "View",
     component: View,
   },
