@@ -13,7 +13,7 @@
       </router-link>
     </li>
     <li>
-      <a href="//127.0.0.1:3000">
+      <a href="//chunghyeon.co.kr">
         도서관리
         <small>(Express)</small>
       </a>
